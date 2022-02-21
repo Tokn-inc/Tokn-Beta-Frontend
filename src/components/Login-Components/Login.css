@@ -1,0 +1,312 @@
+/***************************** Login Page + Default *****************************/
+
+.login-div {
+  font-family: "roboto", sans-serif;
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+
+.login-body {
+  background-color: #24A2FD;
+  background-image: linear-gradient(to right, #004EFF, #00B3F5);
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+} 
+
+.login-close {
+  color: white !important;
+  opacity: 60% !important;
+  font-size: 3rem !important;
+  font-weight: 100 !important;
+  transform: rotate(45deg);
+  position: absolute;
+  top: 50px;
+  left: 80px;
+}
+
+.central-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 16rem;
+}
+
+.create-header, .kyc-header {
+  font-size: 1.2rem !important;
+}
+
+.login-back {
+  background-color: #007bff;
+  position: absolute;
+  top: 17%;
+  left: 10%;
+  width: 3rem;
+  height: 3rem;
+  font-size: 2.2rem;
+}
+
+.login-img {
+  margin-top: 20vh;
+  margin-bottom: 5vh;
+  width: 6rem;
+}
+
+.login-label {
+  font-weight: 300;
+  font-size: 12px;
+  margin-bottom: 0;
+  align-self: flex-start;
+}
+
+.central-div input {
+  background-color: rgba(255, 255, 255, 0.20);
+  border-radius: 4px;
+  border-style: none;
+  color: rgba(255, 255, 255, 1);
+  margin-bottom: 1rem;
+  margin-top: 0.2rem;
+  font-size: 0.8rem;
+  padding: 3px 13px;
+  width: 16rem;
+}
+
+.central-div input:focus {
+  outline: none;
+}
+
+.central-div ::placeholder {
+  color: rgba(255, 255, 255, 0.60);
+}
+
+.central-div .force-opaque::placeholder {
+  opacity: 1;
+}
+
+.password-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.check-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 16rem;
+  position: relative;
+  bottom: 0.4rem;
+}
+
+.check-row-inner {
+  display: flex;
+  align-items: center;
+  margin-top: 0;
+}
+
+.checkbox {
+  width: 1rem !important;
+  margin-right: 2px;
+  position: relative;
+  bottom: 2px;
+  cursor: pointer;
+}
+
+.small  {
+  font-size: 0.6rem;
+}
+
+.central-div .btn-primary, .np3 {
+  background-color: #FFB745;
+  border-radius: 4px;
+  border-style: none;
+  font-size: 0.8rem;
+  font-weight: bold;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 4%;
+  padding-right: 4%;
+  width: 16rem;
+  cursor: pointer;
+}
+
+.central-div .btn-primary:focus {
+  outline: none;
+}
+
+.central-div .btn-primary:active {
+  border: none;
+}
+
+.forgot {
+  cursor: pointer;  
+}
+
+.central-div a {
+  color: white;
+  font-weight: bold;
+}
+
+.central-div a:hover {
+  color: white;
+}
+
+.create-new {
+  font-weight: lighter !important;
+  text-decoration: underline !important;
+  font-size: 0.9rem;
+}
+
+/***************************** Create Profile *****************************/
+
+.central-div h1 {
+  margin: 10rem auto 2rem;
+}
+
+#profile-picture {
+  width: 16rem;
+  height: 7rem;
+  border-style: dotted;
+  border-width: 1px;
+  border-color: rgba(255, 255, 255, 0.80);
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+.profile-picture-inner {
+  width: 14rem;
+  height: 5rem;
+  background-color: rgba(255, 255, 255, 0.20);
+  border-width: 1px;
+  border-radius: 4px;
+}
+
+.upload-btn {
+  background-color: rgba(255, 255, 255, 0.20);
+  border-radius: 4px;
+  border-style: solid;
+  border-color: rgba(255, 255, 255, 0.80);
+  border-width: 1px;
+  color: rgba(255, 255, 255, 0.80);
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 0.7rem;
+  font-weight: normal;
+  height: 1.2rem;
+  width: 16rem;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+
+/***************************** Add Bio *****************************/
+
+.dob-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 16rem;
+}
+
+.dob-container .dob-day {
+  width: 3.8rem !important;
+  text-align: center !important;
+}
+
+.dob-container .dob-month {
+  width: 5.8rem !important;
+  text-align: center !important;
+}
+
+.dob-container .dob-year {
+  width: 4.8rem !important;
+  text-align: center !important;
+}
+
+.label2 {
+ margin-top: 0.5rem;
+}
+
+#kyc-selfie {
+  background-color: rgba(255, 255, 255, 0.20);
+  border-radius: 8px;
+  height: 5rem;
+  width: 16rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+.id-container {
+  display: flex;
+}
+
+.id-half-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.7rem;
+  font-weight: normal;
+}
+
+#container-id1 {
+  margin-right: 1rem;
+}
+
+.kyc-id-box {
+  background-color: rgba(255, 255, 255, 0.20);
+  border-radius: 8px;
+  height: 5rem;
+  width: 7.5rem;
+  margin-bottom: 0.5rem;
+  margin-top: 1rem;
+}
+
+.np3 {
+  margin-bottom: 5rem;
+  margin-top: 1.7rem;
+}
+
+/***************************** Connect Wallet *****************************/
+
+.wallet-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100vh;
+  margin-top: 10rem;
+  text-align: center;
+  width: 22rem;
+}
+
+
+.connect-wallet {
+  font-size: 2rem;
+  align-self: center;
+}
+
+.metamask-img {
+  width: 2rem;
+  position: relative;
+  left: 3.5rem;
+}
+
+.metamask-btn {
+  background-color: rgba(255, 255, 255, 0.20);
+  border-radius: 100px;
+  color: white;
+  margin-top: 5rem;
+  padding: 10px;
+  width: 20rem;
+  position: relative;
+  right: 1rem;
+  margin-bottom: 5rem;
+}

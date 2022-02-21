@@ -1,0 +1,197 @@
+.outerboxb1{
+  justify-content: center;
+  align-items: center;
+  color: rgb(230, 63, 63);
+  display: flex;
+  background-color:#272727;
+  border-style: none;
+  margin-right: auto;
+  margin-top: 4.5em;
+  margin-left: auto;
+  margin-bottom: auto;
+  width:38em;
+ height: 38em;
+  box-shadow: 0px 3px 6px #00000033;
+  box-shadow: 0px 3px 23px #00000021;
+ border: none;
+ border-radius: 45px;
+ opacity: 1;
+
+ }
+ 
+ 
+ 
+ 
+ 
+ .innerboxb1{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   background: #1F1F1F 0% 0% no-repeat padding-box;
+   background:​​#272727;
+   width: 22em;
+   height: 10em;
+  position: relative;
+  top: 11em;
+ left:5em;
+  border-radius: 38px;
+  opacity: 1;
+   }
+ 
+   .boxtext{
+     color: white;
+     text-align: center;
+     font: normal normal 000 10px/26px Graphik;
+     letter-spacing: 1px;
+     opacity: 0.6; 
+     font-family: 'Roboto', sans-serif ;
+    text-align: left;
+    position: relative;
+    left: 2rem;
+     }
+     .closeicon{
+     position: relative;
+     left: 2rem;
+     bottom: 15.5rem;
+     opacity: 0.5; 
+     
+       }
+ 
+   .placeb1{
+   margin-bottom: 15em;
+margin-right: 8em;
+position: absolute; 
+    
+     }
+     .barb1{
+       position: relative;
+ 
+      right: 9rem; 
+      
+       }
+   
+ .confirmbuttonbu {
+   background: #2BE743 0% 0% no-repeat padding-box;
+   border-radius: 31px;
+   opacity: 1;
+ color: white;
+ font-size: 16px;
+ width:8em;
+ height: 2.4em;
+ border: none;
+ font-family: 'Roboto', sans-serif ;
+ font-weight: bold;
+ border-radius: 50px;
+ position:absolute;
+ letter-spacing: 0.5px;
+ margin-top: 5em;
+ margin-left: 0.5em;
+ }
+ 
+ .confirmbutton2b1:hover {
+   opacity: 0.5; 
+ }
+ 
+ 
+ .forumb1{
+   background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
+ background: #333333 0% 0% no-repeat padding-box;
+ padding-left: 10px;
+ border-radius: 7px;
+ border:none;
+ opacity: 0.9;
+ font-family:'Roboto', sans-serif !important;
+ color: rgb(255, 255, 255);
+ font-size: 16px ;
+ text-emphasis-color: white;
+ }
+ 
+ .jek2b1{
+   color: var(--unnamed-color-5f5f5f);
+   text-align: left;
+   letter-spacing: 0px;
+   color: #5F5F5F;
+   opacity: 1;
+   font-family:'Roboto', sans-serif !important;
+   white-space: nowrap;
+   position: relative;
+   left: 5px;
+   top: 10px;
+   font-size: 12px;
+ }
+ .jek1b{
+  color: var(--unnamed-color-5f5f5f);
+  text-align: left;
+  font: normal normal medium 12px/15px Graphik;
+  letter-spacing: 0px;
+  color: #5F5F5F;
+  opacity: 1;
+  font-family:'Roboto', sans-serif !important;
+  position: relative;
+  top: 10px;
+  left: 5px;
+  font-size: 12px;
+}
+.jekb1b{
+  color: var(--unnamed-color-5f5f5f);
+  text-align: left;
+  font: normal normal medium 12px/15px Graphik;
+  letter-spacing: 0px;
+  color: #5F5F5F;
+  opacity: 1;
+  font-family:'Roboto', sans-serif !important;
+  position: relative;
+  top: 10px;
+  left: 5px;
+  font-size: 12px;
+}
+
+ .jek22b1{
+   text-align: left;
+   font: normal normal 100 11px/14px Graphik;
+   letter-spacing: 0px;
+   color: #8B8B8B;
+   opacity: 1;
+   position: relative;
+   bottom: 21px;
+   left: 5.5rem;
+   font-family:'Roboto', sans-serif !important;
+ }
+ 
+ .formsb1{
+   color: var(--unnamed-color-ffffff);
+ text-align: left;
+ font: normal normal medium 21px/33px Graphik;
+ letter-spacing: 0px;
+ color: #FFFFFF;
+ opacity: 1;
+ font-family: 'Roboto', sans-serif;
+ width: 87px;
+ height: 21px;
+ align-content: center;
+ align-items: center;
+ 
+ }
+ 
+ .dragb1{
+  font-family:  'Roboto', sans-serif;
+  width: 158px;
+  height: 40px;
+  text-align: center;
+  font-size: 28px;
+  font-weight:bold;
+  letter-spacing: 0px;
+  color: #FFFFFF;
+  opacity: 1;
+  position: relative;
+  bottom:16rem;
+right: 11rem;
+  white-space: nowrap;
+ }
+ 
+ 
+ 
+ 
+ 
+ 
+ 
