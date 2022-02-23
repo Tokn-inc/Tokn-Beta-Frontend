@@ -8,7 +8,7 @@ function Song(props) {
       
     
         <div className="row-poster">
-        <Link to="/NewSongProfile3">
+        <Link to="/NewSongProfile3" className="sold-card">
         <img className="song-img" src={props.img} />
         <br /><button className="soldoutbutton">Soldout</button>
         <br /><p className="home">{props.title}</p>

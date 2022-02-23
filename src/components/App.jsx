@@ -48,7 +48,7 @@ function App() {
           <Route path="/placebidMain" exact component={() => <PlaceBid />} />
           <Route path="/sellnowMain" exact component={() => <Sellnow />} />
           <Route path="/editpageMain" exact component={() => <Editpage />} />
-          <Route path="/editpage2Main" exact component={() => <Editpage2 />} />
+          <Route path="/editpage2" exact component={() => <Main />} />
         </Switch>
     </div>
   );

@@ -46,7 +46,7 @@ function mobileMenu () {
 function Home() {
     
     const [state, setState] = useState(false);
-  return (
+  return ( 
     <div className="home">  
         <style>{'body { background-color: #131313; }'}</style>
         {/* <img src={hamburger} className="hamburger" alt="hamburger menu" onClick={mobileMenu} /> */}

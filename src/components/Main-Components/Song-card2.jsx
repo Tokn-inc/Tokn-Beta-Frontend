@@ -6,7 +6,7 @@ function Song2(props) {
   return (
     <div className="songcard">
         <div className="row-poster">
-        <Link to="/NewSongProfile">
+        <Link to="/NewSongProfile" className="presale-card">
         <img className="song-img" src={props.img} />
         <br /><button className="presalebutton">Presale</button>
         <br /><p className="home">{props.title}</p>
