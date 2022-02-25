@@ -32,13 +32,13 @@ function Navbar() {
           {state && <p class="user-id user">@{username}</p>}
           <br /></div>
             <div class="discover">
-              <Link to="/home">
+              <Link to="/home" className="menu-link">
                 <div className="navtext-container2"><AiFillHome className="navbar-icon2"/> <p className="linknavtext2">Home</p></div>
               </Link>
-              <Link to="/search">
+              <Link to="/search" className="menu-link">
                 <div className="navtext-container2"><RiSearchLine className="navbar-icon2"/> <p className="linknavtext2">Search</p></div>
               </Link>
-              <Link to="/library">
+              <Link to="/library" className="menu-link">
                 <div className="navtext-container2"><BiLibrary className="navbar-icon2"/> <p className="linknavtext2">Library</p></div>
               </Link>
               {/* <div className='navblock'> <Link to="/search"  className="link"> <RiSearchLine /> <div className="linknavtext">Search </div></Link> </div> 

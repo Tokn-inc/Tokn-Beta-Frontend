@@ -26,6 +26,7 @@
     text-align: center;
     top: 0;
     left: 0;
+    z-index: 50;
   }
 
   @media (max-width: 500px) {
@@ -144,10 +145,12 @@ color:white;
     border-radius: 3px;
     color: #bbb;
     height: 100%;
+    text-decoration: none !important;
   }
 
   .navtext-container:hover {
     color: white !important;
+    text-decoration: none !important;
   }
 
   .navtext-container:focus {
@@ -167,10 +170,19 @@ color:white;
   .linknavtext2 {
     align-self: flex-start !important;
     margin-left: 0.5rem !important;
+    text-decoration: none !important;
   }
 
-  .linknavtext:hover {
+  .linknavtext2:hover {
     color: white;
+    text-decoration: none !important;
+  }
+
+  .menu-link {
+    text-decoration: none !important;
+  }
+
+  .menu-link:hover {
     text-decoration: none !important;
   }
 
@@ -386,8 +398,13 @@ color:white;
   .library {
     color: white;
     font-weight: bold;
-    margin-left: 10rem;
+    position: relative;
+    left: 10rem;
+    height: 100vh;
     margin-bottom: 4rem;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center;
   }
 
   .home h6 {
@@ -420,7 +437,7 @@ color:white;
     height: 100%;
    }
 
-  .row-posters {
+  .row-posters { 
     display: flex;
     margin-bottom: 5em;
     flex-wrap: wrap;
@@ -447,6 +464,11 @@ color:white;
     font-family:'Roboto', sans-serif !important;
     display: flex;
     justify-content: center;
+    text-decoration: none !important;
+  }
+
+  .sold-card:hover, .presale-card:hover {
+    text-decoration: none !important;
   }
 
   .presalebutton{
@@ -496,8 +518,9 @@ color:white;
     flex-wrap: wrap;
     padding: 0px;
     padding-left: 64px;
-    padding-right: 0px;
-    margin-top: 5em;
+    padding-right: 10px;
+    margin-top: 3em;
+    margin-right: 10rem;
    
   }
 
@@ -664,8 +687,7 @@ color:white;
          color: #bbb;
          display: flex;
          position:absolute;
-         left:33em;
-         top:18em;
+         top:20em;
          font-size: 16px;
          font-weight: bold;
          font-family:'Roboto', sans-serif !important;    
@@ -787,7 +809,7 @@ color:white;
     margin-top: 80px;
   }
 
-  /***************************** Libraray *****************************/
+  /***************************** Library ****************************/
 
   .library {
     margin-top: 0 !important;
@@ -804,7 +826,8 @@ color:white;
     width: 80vw;
     background-color: #272727;
     position: relative;
-    margin-left:3.8em;
+    right: 4rem;
+    padding-top: 1rem;
   }
 
   .cover-pic h4, .cover-pic h5 {
@@ -842,6 +865,16 @@ color:white;
     left:5em;
   
   }
+
+  .lib-link {
+    color: white;
+    cursor: pointer;
+    display: flex;
+    justify-content: center !important;
+    text-align: center;
+  }
+
+
   .alignuser{
     white-space: nowrap;
     display: flex;
@@ -875,7 +908,7 @@ color:white;
     margin-bottom: 70px;
   }
 
-  .left-section {
+  .user-details {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -885,7 +918,7 @@ color:white;
   .right-section {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: flex-end;
     margin-right: 4rem;
     height: 10rem;
@@ -897,16 +930,42 @@ color:white;
     justify-content: space-between;
     align-items: flex-start;
     margin-top: 1rem;
+    margin-left: 3rem;
     height: 5rem;
     margin-bottom: 2rem;
   }
 
   @media (max-width: 1200px) {
+    .cover-pic {
+      width: 70vw;
+    }
+  }
+
+  @media (max-width: 800px) {
     .right-section {
       display: none;
     }
     .right-to-left {
       display: flex;
+    }
+    .cover-pic {
+      width: 68vw;
+      margin-left: -2rem;
+    }
+    .profile-pic {
+      width: 10rem;
+      height: 10rem;
+    }
+
+    .profile-navbar {
+      width: 60vw;
+      margin-left: -2rem;
+      display: flex;
+      justify-content: center;
+    }
+
+    .user-details, .right-to-left {
+      margin-left: 1.5rem;
     }
   }
 
@@ -941,9 +1000,9 @@ color:white;
 
   .profile-navbar {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    width: 30vw;
+    margin-top: 0.5rem;
   }
 
 /***************************** Launch *****************************/
@@ -1221,8 +1280,8 @@ width: 9rem;
   background-color: #131313 !important;
   font-weight: normal !important;
 position: fixed;
-left:90em;
-top:42.5em;
+left:95em;
+top:46.2em;
   font-size: 0.8rem !important;
   margin-bottom: 0;
   margin-left: 10px !important;
@@ -1234,8 +1293,8 @@ top:42.5em;
   border-radius: 25px;
   position: fixed;
   display: inline-block;
-  height: 440px;
-  width: 440px;
+  height: 500px;
+  width: 500px;
   margin-top: -31em;
   margin-left: 30em;
 }
@@ -1245,7 +1304,7 @@ top:42.5em;
   position: fixed;
 
 left:41.5em;
-top:28.5em;
+top:31em;
   margin-top: 0 !important;
   margin-left: 5px !important;
 }
@@ -1263,6 +1322,7 @@ top:28.5em;
 
 .stream {
   background-color: rgba(255, 255, 255, 0.2) !important;
+  border-style: none;
   color: rgba(255, 255, 255, 0.6) !important;
   border-radius: 100px;
   font-weight: 500;
@@ -1297,8 +1357,8 @@ top:28.5em;
   display: inline-block;
   margin-right: 10px;
   opacity: 20%;
-  height: 30px;
-  width: 30px;
+  height: 40px;
+  width: 40px;
   position: relative;
   top: 6px;
 }
@@ -1381,7 +1441,8 @@ top:28.5em;
 top:2em;
 outline:none;
 }
-******************************************************PlaceBid*******************************************************
+
+/******************************************************PlaceBid*******************************************************/
 
 .containerp1{
   background-color: #131313;
@@ -1538,7 +1599,8 @@ margin-left: 1.8em;
   top:1.8em;
   left:1em;
 }
-******************************************************BuyNow*******************************************************
+
+/******************************************************BuyNow*******************************************************/
 
 .confirmbuttonbuynow{
   background: #1183D8 0% 0% no-repeat padding-box;
@@ -1559,7 +1621,8 @@ letter-spacing: 0.5px;
 margin-left: 1.8em;
 
 }
-************************************NewSongProfile********************************************
+
+/************************************NewSongProfile********************************************/
 .newplacebidbutton{
   background-color: #2BE743;
   border-radius: 25px;
@@ -1573,7 +1636,7 @@ top:2em;
 .newsellnowbutton{
   background-color: #2BE743;
   border-radius: 25px;
-
+  border-style: none;
   color: #FFFFFF;
   font-size: 18px;
   width:6em;
@@ -1585,6 +1648,7 @@ font-family: "roboto", sans-serif;
 .newbidbtn{
  
   background-color: #24a2fd;
+  border-style: none !important;
   border-radius: 25px;
   color: #FFFFFF;
   font-size: 18px;
@@ -1597,7 +1661,7 @@ font-family: "roboto", sans-serif;
 .soldoutbuttonplace{
   width:5em;
   height:2em;
-  border: none;
+  border-style: none;
   text-align: center;
   margin-top: 1em;
   margin-bottom: 1em;

@@ -27,9 +27,8 @@ function SongProfile4() {
                 <p><span className="info"><p> <FaInfoCircle/></p></span>Price: <span className="price-details">15.09 USDC</span></p>
                 <p><span className="info"><p><FaInfoCircle/></p></span>Royalty%: <span className="price-details">5%</span></p>
                 <p><span className="info"><p><FaInfoCircle/></p></span>Quantity: <span className="price-details">100 Tokens</span></p>
-                <Link to="./NewPlaceBid"> <button className="newbidbtn">Place Bid</button></Link><br>
+                <Link to="./NewPlaceBid"> <button className="newbidbtn">Edit</button></Link><br>
                 </br><br></br>
-                <Link to="./BuyNowNew"> <button className="newsellnowbutton">Buy Now</button></Link>
                 
             </div>
             <div className="container2">

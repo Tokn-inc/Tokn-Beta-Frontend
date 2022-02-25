@@ -50,7 +50,7 @@ function Main() {
           <Route path="/sellnowMain" exact component={() => <Sellnow />} />
           <Route path="/editpageMain" exact component={() => <Editpage />} />
           <Route path="/buynowMain" exact component={() => <BuyNow />} />
-          <Route path="/editpage2" exact component={() => <Editpage2 />} />
+          <Route path="/editpage2" exact component={() => <Editpage2 />} /> 
         </Switch>
         
     </div></BrowserRouter>
