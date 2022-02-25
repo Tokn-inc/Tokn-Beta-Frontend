@@ -1,16 +1,24 @@
 import React, {useState} from "react"; 
 import { Link, withRouter } from "react-router-dom";
 import "./Main.css";
+import {useSelector, useDispatch} from "react-redux"
 
 import { AiFillHome } from 'react-icons/ai';
 
 import { RiSearchLine } from 'react-icons/ri';
 
 import { BiLibrary } from 'react-icons/bi';
+import { logoutSuccess } from "../../redux/user/userCreators";
 function Navbar() {
   const [state, setState] = useState(true);
- 
- 
+  const username = useSelector((state) => state.user.user.username)
+ const dispatch = useDispatch()
+  const logout = (event) => {
+    event.preventDefault();
+    dispatch(logoutSuccess)
+    alert("Logout Successful.")
+    window.location = "/"
+  }
   return ( 
      
       <div class="side-navbar">
@@ -21,7 +29,7 @@ function Navbar() {
           {!state && <button type="button" name="button" class="btn-primary login" onClick={() => setState(true)}>Login</button>}
           </Link>
           {state && <p class="username user">User Name</p>}
-          {state && <p class="user-id user">@username</p>}
+          {state && <p class="user-id user">@{username}</p>}
           <br /></div>
             <div class="discover">
               <Link to="/home">
@@ -37,7 +45,7 @@ function Navbar() {
               <div className='navblock'>  <Link to="/library" className="link" ><BiLibrary /><div  className="linknavtext" >Library</div></Link> </div>  */}
             </div>
         
-            {state && <Link to='/'><button type="button" name="button" class="btn-primary login logout" onClick={() => setState(false)}>Logout</button></Link>}
+            {state && <Link to='/'><button type="button" name="button" class="btn-primary login logout" onClick={logout}>Logout</button></Link>}
         </div>
   );
 }

@@ -14,6 +14,9 @@ import NewSongProfile from "./Main-Components/NewSongProfile4.jsx";
 import NewSongProfile2 from "./Main-Components/NewSongProfile2.jsx";
 import NewSongProfile3 from "./Main-Components/NewSongProfile3.jsx";
 import NewSongProfile4 from "./Main-Components/NewSongProfile4.jsx";
+import { Provider } from "react-redux";
+import { store, persistor } from "../redux/store";
+import { PersistGate } from "redux-persist/integration/react"
 import Page1 from './Upload-Components/Page1.jsx';
 import Page2 from './Upload-Components/Page2.jsx';
 import Page3 from './Upload-Components/Page3.jsx';
@@ -22,7 +25,9 @@ import Page5 from './Upload-Components/Page5.jsx';
 
 function App() {
   return (
-    <div>
+    <Provider store={store}>
+      <PersistGate loading={null} persistor={persistor}>
+        <div>
         <Switch>
           <Route path="/" exact component={() => <Login />} />
           <Route path="/username" exact component={() => <Login />} />
@@ -51,6 +56,8 @@ function App() {
           <Route path="/editpage2Main" exact component={() => <Editpage2 />} />
         </Switch>
     </div>
+    </PersistGate>
+    </Provider>
   );
 }
 
