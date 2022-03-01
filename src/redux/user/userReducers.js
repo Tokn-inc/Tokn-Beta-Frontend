@@ -16,7 +16,6 @@ export const userReducer = (
     error: "",
     user: null,
     loggedIn: false,
-    accessToken: null,
   },
   action
 ) => {

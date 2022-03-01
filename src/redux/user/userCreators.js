@@ -107,7 +107,14 @@ export const signup =
 
     return confirm_password === password
       ? axios
-          .post("http://localhost:8081/user/new", formData, axiosConfig)
+          .post("http://localhost:8081/user/new", formData, {
+            withCredentials: true,
+            baseURL: "http://localhost:8081",
+            headers: {
+              "Content-Type":
+                "multipart/form-data;boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW",
+            },
+          })
           .then((response) => {
             console.log(response);
             alert("Signup Successful");
@@ -116,6 +123,7 @@ export const signup =
                 username,
                 email,
                 avatar: response.data.avatarURL,
+                accessToken: response.data.token,
               })
             );
             window.location = "/home";
@@ -135,17 +143,21 @@ export const login =
     try {
       console.log(detail, password, walletAddress);
       await axios
-        .post("http://localhost:8081/user/login", {
-          detail,
-          password,
-          walletAddress,
-        })
+        .post(
+          "http://localhost:8081/user/login",
+          { detail, password, walletAddress },
+          {
+            withCredentials: true,
+            baseURL: "http://localhost:8081",
+          }
+        )
         .then((response) => {
           console.log("Fine here");
           let user = {
             username: response.data.username,
             email: response.data.email,
             avatar: response.data.avatar,
+            accessToken: response.data.token,
           };
           console.log("response", response);
           dispatch(loginSuccess(user));
@@ -185,3 +197,31 @@ export const login =
 //       console.log(err.response.data.message);
 //     });
 // };
+
+export const logout = (username) => async (dispatch) => {
+  dispatch(logoutRequest());
+  console.log("hereee");
+  return axios
+    .post(
+      "http://localhost:8081/user/logout",
+      { username },
+      {
+        withCredentials: true,
+        baseURL: "http://localhost:8081",
+      }
+    )
+    .then((response) => {
+      if (response.data.success) {
+        dispatch(logoutSuccess());
+        // alert("Logout Successful.");
+        window.location = "/username";
+      } else {
+        dispatch(logoutFailure());
+        alert("Logout Unsuccessful. Try Again");
+      }
+    })
+    .catch((err) => {
+      dispatch(logoutFailure);
+      alert(err);
+    });
+};
