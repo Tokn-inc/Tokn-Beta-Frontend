@@ -175,28 +175,31 @@ export const login =
     }
   };
 
-// export const loginWithJWT = (address) => async (dispatch) => {
-//   axios
-//     .post(
-//       process.env.REACT_APP_API_URL + "/cookie-check",
-//       { address: address },
-//       axiosConfig
-//     )
-//     .then((response) => {
-//       dispatch(
-//         loginSuccess({
-//           userName: response.data.username,
-//           email: response.data.email,
-//           avatar: response.data.avatar,
-//         })
-//       );
-//       window.location = "/buy-now";
-//       console.log(response);
-//     })
-//     .catch((err) => {
-//       console.log(err.response.data.message);
-//     });
-// };
+export const loginWithJWT = (address) => async (dispatch) => {
+  axios
+    .post(
+      "http://localhost:8081/user/login-with-cookie",
+      { address: address },
+      {
+        withCredentials: true,
+        baseURL: "http://localhost:8081",
+      }
+    )
+    .then((response) => {
+      dispatch(
+        loginSuccess({
+          userName: response.data.username,
+          email: response.data.email,
+          avatar: response.data.avatar,
+        })
+      );
+      window.location = "/home";
+      console.log(response);
+    })
+    .catch((err) => {
+      console.log(err.response.data.message);
+    });
+};
 
 export const logout = (username) => async (dispatch) => {
   dispatch(logoutRequest());

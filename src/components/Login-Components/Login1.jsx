@@ -5,7 +5,7 @@ import logo from "../images/logo.png";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleLeft } from '@fortawesome/free-solid-svg-icons';
 import { useDispatch, useSelector } from "react-redux";
-import { login} from "../../redux";
+import { login, loginWithJWT} from "../../redux";
 
 function Login1() {
 
@@ -25,7 +25,7 @@ function Login1() {
       window.location = "/home"
     }
      
-      // dispatch(loginWithJWT(address))
+    dispatch(loginWithJWT(address))
   }, [])
 
   const userLogin = async (event) => {
