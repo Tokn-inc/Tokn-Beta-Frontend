@@ -46,13 +46,19 @@ function Library() {
 
         </div>
       
-      </div>
+      </div> 
 
-      <div className="profile-navbar">
+      {/* <div id="profileNavbar">
         
-        <Link to="" className="lib-link"><p>Profile</p></Link>
-        <Link to="" className="lib-link"><p>Collection</p></Link>
-        <Link to="/launch" className="lib-link"><p>Launch</p></Link> 
+        <Link to="" className="lib-link"><h6>Profile</h6></Link>
+        <Link to="" className="lib-link"><h6>Collection</h6></Link>
+        <Link to="/launch" className="lib-link"><h6>Launch</h6></Link> 
+      </div> */}
+
+      <div id="profileNavbar">
+        <p className="lib-link">Profile</p>
+        <p className="lib-link">Collection</p>
+        <Link to="/launch"><p className="lib-link launch-text">Launch</p></Link>
       </div>
 
         <div className="navlinebar">

@@ -6,8 +6,8 @@ import "./Upload.css";
 import upload from "../images/upload.png";
 
 function Page2() {
-  return (
-    <div>
+  return ( 
+    <div className="upload-wrapper">
         <div className="status-bar">
             <div className="active-bar"><span className="status-circle completed-sc"><FontAwesomeIcon className="fa-check" icon={faCheck} /></span></div>
             <div className="unactive-bar"><span className="status-circle active-sc"></span></div>
@@ -17,7 +17,7 @@ function Page2() {
         <Link to="/launch"><p className="upload-close">+</p></Link>
         <div className="status-desc"><p>Song Information</p></div>
         <div className="white-container wc2">
-            <Link to="/upload"><span class="back"> <FontAwesomeIcon className="back-icon" icon={faAngleLeft} /> </span></Link>
+            <Link to="/upload1"><span class="back"> <FontAwesomeIcon className="back-icon" icon={faAngleLeft} /> </span></Link>
             <p className="first-label"><span className="upload-info">&#8505;</span>Cover Art</p>
             <div className="dotted-container dc2">
                 <img src={upload} alt="upload" class="upload-img" />
@@ -34,8 +34,8 @@ function Page2() {
             <input type="text" className="upload-input ui2" placeholder="Default" />
 
             <Link to="/sale-info">
-            <button type="button" name="button" class="btn-primary upload-btn page2-btn">
-                Next Page
+            <button type="button" name="button" class="btn-primary upload-btn-new page2-btn-new">
+                Confirm
             </button>
             </Link>
         </div>

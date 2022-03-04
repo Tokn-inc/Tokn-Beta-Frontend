@@ -11,7 +11,7 @@ function Song(props) {
         <Link to="/NewSongProfile3" className="sold-card">
         <img className="song-img" src={props.img} />
         <br /><button className="soldoutbutton">Soldout</button>
-        <br /><p className="home">{props.title}</p>
+        <br /><p className="home home-title">{props.title}</p>
         <br />
         <p className="home artist">{props.artist}</p>
       </Link></div>

@@ -2,12 +2,12 @@ import React from "react";
 import { Link, withRouter } from "react-router-dom";
 import "./Main.css";
 
-function SongLibrary(props) {
+function SongLibraryHome(props) {
   return (
     <div className="song-library">
     
         <div className="row-poster">
-        <Link to="/NewSongProfile4">
+        <Link to="/NewSongProfile5">
         <img className="song-img" src={props.img} />
         <br />
         <p className="home lib-title">{props.title}</p>
@@ -18,4 +18,4 @@ function SongLibrary(props) {
   );
 }
 
-export default SongLibrary;
+export default SongLibraryHome;

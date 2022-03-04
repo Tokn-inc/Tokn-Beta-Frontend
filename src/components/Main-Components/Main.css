@@ -108,6 +108,8 @@ color:white;
     color: #bbb;
     font-weight: bold;
     margin: 0.5rem auto;
+    padding-left: 0.3rem;
+    padding-right: 0.3rem;
   }
 
   /* .link {
@@ -144,17 +146,8 @@ color:white;
     align-items: center;
     border-radius: 3px;
     color: #bbb;
-    height: 100%;
     text-decoration: none !important;
-  }
-
-  .navtext-container:hover {
-    color: white !important;
-    text-decoration: none !important;
-  }
-
-  .navtext-container:focus {
-    background-color: white !important;
+    align-self: center;
   }
 
   .linknavtext {
@@ -168,6 +161,7 @@ color:white;
   }
 
   .linknavtext2 {
+    background-color: transparent !important;
     align-self: flex-start !important;
     margin-left: 0.5rem !important;
     text-decoration: none !important;
@@ -382,7 +376,8 @@ color:white;
 
   .navbar-icon2 {
     font-size: 1.3rem;
-    margin-left: 2rem;
+    margin-left: 1rem;
+    margin-right: 0.8rem;
   }
 
   .featuredbar{
@@ -405,6 +400,10 @@ color:white;
     display: flex !important;
     flex-direction: column !important;
     align-items: center;
+  }
+
+  .home-title {
+    margin-bottom: 0.2rem !important;
   }
 
   .home h6 {
@@ -467,6 +466,18 @@ color:white;
     text-decoration: none !important;
   }
 
+  .sold2 {
+    margin-left: 0.5rem;
+    width: 3rem;
+  }
+
+  .presale-time {
+    font-size: 0.7rem !important;
+    position: relative;
+    bottom: 0.5rem;
+    left: 0.2rem;
+  }
+
   .sold-card:hover, .presale-card:hover {
     text-decoration: none !important;
   }
@@ -477,7 +488,6 @@ color:white;
     border: none;
     letter-spacing: 0.6px;
     margin-top: 1em;
-    margin-bottom: 1em;
     font-size: 8px;
     text-align: center;
     color: #FFFFFF;
@@ -639,14 +649,27 @@ color:white;
     .song-img {
       height: 50vw !important;
     }
+    .side-navbar {
+      box-shadow: 5px 0 10px -3px rgba(0, 0, 0, 0.3);
+    }
+    .cover-pic {
+      padding-top: 2.5rem !important;
+    }
+    .right-to-left {
+      position: relative;
+      bottom: 1rem;
+    }
   }
 
-  @media(max-width: 500px) {
+  @media(max-width: 490px) {
     .row-poster {
       width: 36vw;
     }
     .song-img {
       height: 36vw !important;
+    }
+    .side-navbar {
+      box-shadow: 5px 0 10px -2px black;
     }
   }
 
@@ -811,6 +834,13 @@ color:white;
 
   /***************************** Library ****************************/
 
+  .upload-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
   .library {
     margin-top: 0 !important;
     margin-bottom: 0 !important;
@@ -825,8 +855,11 @@ color:white;
     border-bottom-right-radius: 25px;
     width: 80vw;
     background-color: #272727;
-    position: relative;
-    right: 4rem;
+    /* position: relative;
+    right: 4rem; */
+    align-self: flex-start;
+    margin-left: 64px;
+    margin-bottom: 0.7rem;
     padding-top: 1rem;
   }
 
@@ -869,11 +902,20 @@ color:white;
   .lib-link {
     color: white;
     cursor: pointer;
-    display: flex;
-    justify-content: center !important;
-    text-align: center;
+    width: 12vw !important;
+    min-width: 6.5rem !important;
+    position: relative;
+    right: 4rem;
   }
 
+  .launch-text {
+    padding-left: 1.5rem !important;
+  }
+
+  .lib-link:hover {
+    color: #24a2fd;
+    text-decoration: none;
+  }
 
   .alignuser{
     white-space: nowrap;
@@ -937,6 +979,12 @@ color:white;
 
   @media (max-width: 1200px) {
     .cover-pic {
+      width: 75vw;
+    }
+  }
+
+  @media (max-width: 1000px) {
+    .cover-pic {
       width: 70vw;
     }
   }
@@ -949,24 +997,29 @@ color:white;
       display: flex;
     }
     .cover-pic {
-      width: 68vw;
-      margin-left: -2rem;
+      width: 100vw;
+      margin-left: 0 !important;
+      border-radius: 0 !important;
     }
     .profile-pic {
       width: 10rem;
       height: 10rem;
     }
 
-    .profile-navbar {
-      width: 60vw;
-      margin-left: -2rem;
-      display: flex;
+    #profileNavbar {
+      display: flex !important;
+      flex-direction: row !important;
       justify-content: center;
+      text-align: center !important;
     }
 
     .user-details, .right-to-left {
       margin-left: 1.5rem;
     }
+  }
+
+  .lib-title {
+    margin-top: 0.7rem !important;
   }
 
   .iconset{
@@ -1255,6 +1308,8 @@ width: 9rem;
 
 .song-profile {
   margin-left: 10rem;
+  display: flex !important;
+  padding-right: 10rem;
 }
 
 .cross {
@@ -1269,45 +1324,46 @@ width: 9rem;
 }
 
 .container2 {
-  display: block;
-  margin-top: 0px !important;
-  margin-left: 70px !important;
-  bottom: 8em;
-  left: 36em;
-}
-
-.date {
-  background-color: #131313 !important;
-  font-weight: normal !important;
-position: fixed;
-left:95em;
-top:46.2em;
-  font-size: 0.8rem !important;
-  margin-bottom: 0;
-  margin-left: 10px !important;
+  margin-top: 145px !important;
+  display: flex;
+  flex-direction: column;  
 }
 
 .song-profile-img {
   background-color: white;
   opacity: 20%;
   border-radius: 25px;
-  position: fixed;
   display: inline-block;
-  height: 500px;
-  width: 500px;
-  margin-top: -31em;
-  margin-left: 30em;
+  height: 450px;
+  width: 450px;
+  margin-bottom: 0 !important;
+}
+
+.genre-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 0 !important;
+  position: relative;
+  bottom: 1rem;
 }
 
 .genre {
   background-color: #131313 !important;
-  position: fixed;
-
-left:41.5em;
-top:31em;
   margin-top: 0 !important;
   margin-left: 5px !important;
 }
+
+.date {
+  background-color: #131313 !important;
+  font-weight: normal !important;
+  font-size: 0.8rem !important;
+  margin-bottom: 0;
+  margin-left: 10px !important;
+  position: relative;
+  bottom: 0.5rem;
+}
+
 
 .container {
   background-color: #131313;
@@ -1315,9 +1371,8 @@ top:31em;
   margin-top: 0px !important;
   margin-left: 70px !important;
   top: 0em;
-  right: 15em;
   border-radius: 50px;
-  width: 44% !important; 
+  width: 30rem !important;
 }
 
 .stream {
@@ -1337,8 +1392,8 @@ top:31em;
 .song-info{
   background-color: #131313;
   display: inline-block;
-  margin-left: 65px;
-  margin-top: 65px;
+  margin-left: 5px;
+  margin-top: 175px;
   font-family: "roboto", sans-serif;
 }
 
@@ -1655,9 +1710,15 @@ font-family: "roboto", sans-serif;
   width:6em;
   height: 2.2em;
   position: relative;
-top:2em;
-font-family: "roboto", sans-serif;
+  top:2em;
+  font-family: "roboto", sans-serif;
+  margin-bottom: 1rem;
 }
+
+.sell-now-btn {
+  background-color: #2BE743 !important;
+}
+
 .soldoutbuttonplace{
   width:5em;
   height:2em;

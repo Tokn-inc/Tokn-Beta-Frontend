@@ -9,7 +9,7 @@ function Song3(props) {
         <Link to="/NewSongProfile1">
         <img className="song-img" src={props.img} />
         <br /><button className="presalebutton">Presale</button>
-        <p className="home">{props.title}</p>
+        <p className="home home-title">{props.title}</p>
         <br />
         <p className="home artist">{props.artist}</p>
       </Link></div>
