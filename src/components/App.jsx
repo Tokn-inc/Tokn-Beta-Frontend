@@ -47,6 +47,7 @@ function App() {
           <Route path="/Form" exact component={() => <Main />} />
           <Route path="/buynowMain" exact component={() => <BuyNow />} />
           <Route path="/upload1" exact component={() => <Upload />} />
+          <Route path="/song-info" exact component={() => <Upload />} />
           <Route path="/sale-info" exact component={() => <Upload />} />
           <Route path="/distribution-info" exact component={() => <Upload />} />
           <Route path="/confirm" exact component={() => <Upload />} />

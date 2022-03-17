@@ -6,6 +6,7 @@ import Song2 from "./Song-card2";
 import songfix from "./Database/song-details2";
 import songDetails from "./Database/song-details";
 import SongLibrary from "./Song-library";
+import SongLibraryHome from "./Song-library-home";
 import hamburger from '../images/Hamburger.png';
 import { AiFillHome } from 'react-icons/ai';
 import { RiSearchLine } from 'react-icons/ri';
@@ -78,7 +79,7 @@ function Home() {
         <div className="row-posters" >  {songDetails.map(createSong)}</div>
         <div className="row-posters" >  {songfix.map(createSong2 )}</div>   
         <div className="row-posters">{songDetails.map(detail =>
-            <SongLibrary
+            <SongLibraryHome
                 key={detail.id}
                 img={detail.img}
                 title={detail.title}

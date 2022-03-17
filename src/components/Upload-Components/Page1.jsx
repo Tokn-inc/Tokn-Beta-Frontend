@@ -5,7 +5,7 @@ import upload from "../images/upload.png";
 
 function Page1() {
   return (
-    <div>
+    <div className="upload-wrapper">
         <div className="status-bar">
             <div className="unactive-bar"><span className="status-circle active-sc"></span></div>
             <div className="unactive-bar"><span className="status-circle"></span></div>
@@ -22,7 +22,7 @@ function Page1() {
                 <p>browse from files</p>
             </div>
             <Link to="/song-info">
-            <button type="button" name="button" class="btn-primary upload-btn page1-btn">
+            <button type="button" name="button" class="btn-primary upload-btn-new page1-btn-new">
                 Upload
             </button>
             </Link>

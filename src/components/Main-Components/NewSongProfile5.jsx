@@ -5,7 +5,7 @@ import { FaInfoCircle } from 'react-icons/fa';
 import "./Main.css";
 
 
-function SongProfile() {
+function SongProfile5() {
   return (
     <div className="song-profile">
       <style>{'body { background-color: #131313; }'}</style>
@@ -22,8 +22,9 @@ function SongProfile() {
           <p><span className="info"><p> <FaInfoCircle/></p></span>Price: <span className="price-details">15.09 USDC</span></p>
           <p><span className="info"><p><FaInfoCircle/></p></span>Royalty%: <span className="price-details">5%</span></p>
           <p><span className="info"><p><FaInfoCircle/></p></span>Quantity: <span className="price-details">100 Tokens</span></p>
-          <Link to="./NewPlaceBid"> <button className="newbidbtn sell-now-btn">Buy Now</button></Link> 
-          <br /><br /><p className="presale-time">2W : 5D : 23H</p> 
+          <Link to="./NewPlaceBid"> <button className="newbidbtn">Edit</button></Link>
+          <br />
+          <Link to="./NewPlaceBid"> <button className="newbidbtn sell-now-btn">Buy Now</button></Link>  
         </div>
       </div>
       <div className="container2">
@@ -39,4 +40,4 @@ function SongProfile() {
   );
 }
 
-export default SongProfile;
+export default SongProfile5;

@@ -7,9 +7,14 @@
 .upload-body {
   background-color: #24A2FD;
   position: fixed;
-  height: 100%;
+  min-height: 100%;
   width: 100%;
+  padding-bottom: 2rem !important;
   z-index: -1;
+  display: flex !important;
+  flex-direction: column;
+  justify-content: center !important;
+  align-items: center !important;
 }
 
 .status-bar {
@@ -85,10 +90,11 @@
   height: 550px;
   width: 850px;
   border-radius: 50px;
-  position: absolute;
-  left: 25%;
-  top: 20%;
+  margin-top: 10rem;
+  margin-bottom: 5rem;
   box-shadow: 0 0 25px #003d9f;
+  align-self: center !important;
+  position: relative;
 }
 
 .track {
@@ -128,16 +134,17 @@
   margin-top: 0;
 }
 
-.upload-btn {
+.upload-btn-new {
   background-color: #24A2FD;
   border-radius: 100px;
   font-size: 1.3rem;
-  font-weight: 500;
+  font-weight: 500; 
   padding-left: 35px;
   padding-right: 35px;
+  cursor: pointer;
 }
 
-.page1-btn {
+.page1-btn-new {
   position: absolute;
   right: 40px;
   bottom: 40px;
@@ -146,10 +153,9 @@
 /***************************** Page 2 *****************************/
 
 .wc2 {
-  height: 100vh;
-  border-bottom-left-radius: 0;
-  border-bottom-right-radius: 0;
-  padding-bottom: 0;
+  height: 750px !important;
+  margin-bottom: 5rem !important;
+  position: relative;
 }
 
 .back {
@@ -249,16 +255,16 @@
   font-weight: bold;
 }
 
-.page2-btn {
+.page2-btn-new {
   position: absolute;
-  top: 500px;
-  right: 40px;
+  bottom: 60px;
+  left: 350px;
 }
 
 /***************************** Page 3 *****************************/
 
 .wc3 {
-  height: 120vh;
+  height: 122vh !important;
 }
 
 .ui3 {

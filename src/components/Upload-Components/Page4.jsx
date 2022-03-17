@@ -6,7 +6,7 @@ import "./Upload.css";
 
 function Page4() {
   return (
-    <div>
+    <div className="upload-wrapper">
         <div className="status-bar">
             <div className="active-bar"><span className="status-circle completed-sc"><FontAwesomeIcon className="fa-check" icon={faCheck} /></span></div>
             <div className="active-bar"><span className="status-circle completed-sc"><FontAwesomeIcon className="fa-check" icon={faCheck} /></span></div>
