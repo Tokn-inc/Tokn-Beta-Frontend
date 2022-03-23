@@ -1,0 +1,175 @@
+.advance_settings_page {
+  background-color: #131313;
+  width: 100vw;
+  height: 100vh;
+  z-index: -3;
+  display: flex;
+}
+
+.left-pane {
+  background-color: rgba(39, 39, 39, 0.5);
+  font-weight: 100 !important;
+  width: 42vw;
+  min-width: 30rem;
+  height: 100vh;
+  z-index: 1;
+}
+
+.close-setting {
+  display: flex;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 3rem !important;
+  font-weight: lighter !important;
+  height: 2rem;
+  width: 2rem;
+  transform: rotate(45deg);
+  position: absolute;
+  left: 14rem;
+  top: 3rem;
+  cursor: pointer;
+} 
+
+.settings-text {
+  color: rgba(255, 255, 255, 0.85);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin-left: 17rem;
+  position: relative;
+  top: 4rem;
+}
+
+.settings-header {
+  margin-bottom: 3rem;
+}
+
+.box-text {
+  background-color: #272727;
+  width: 12rem;
+  border-radius: 5px;
+  padding-left: 10px;
+}
+
+.box-text2 {
+  background-color: rgba(39, 39, 39, 0.65) !important;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.hor-line {
+  width: 16rem;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.6);margin-bottom: 0.5rem;
+}
+
+.coming {
+  margin-bottom: 1rem;
+  font-size: 0.6rem !important;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.right-pane-text {
+  display: flex;
+  flex-direction: column;
+  margin-left: 5rem;
+  position: relative;
+  top: 5rem;
+  color: rgba(255, 255, 255, 0.6);
+  width: 30rem; 
+  height: 40rem;
+}
+
+.profile-picture {
+  width: 5rem;
+  height: 5rem;
+  background-color: rgb(82, 80, 80);
+  border-radius: 100px;
+  position: relative;
+  left: 1rem;
+}
+
+.button-upload {
+  background-color: transparent;
+  color: #24a2fd;
+  margin-top: 1rem;
+  width: 7rem;
+  border-style: solid;
+  border-color: #24a2fd;
+  opacity: 0.5;
+  border-radius: 100px;
+  border-width: 3px;
+  cursor: pointer;
+  margin-bottom: 0.7rem;
+}
+
+.small-jpg {
+  font-size: 0.6rem;
+  opacity: 0.5;
+}
+
+.username-txt {
+  margin-top: 2rem;
+  margin-bottom: 7px;
+}
+
+.username-input {
+  background-color: #272727;
+  border-style: none;
+  border-radius: 5px;
+  padding-left: 10px;
+  width: 15rem;
+}
+
+.saved-txt {
+  margin-top: 4rem;
+}
+
+.payment-box {
+  width: 18rem;
+  height: 5rem;
+  background-color: #272727;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.radio-input {
+  cursor: pointer;
+  margin-left: 1rem;
+}
+
+.visa-icon {
+  width: 4rem;
+  height: 2rem;
+  background-color: white;
+  color: blue;
+  font-size: 1.2rem;
+  border-radius: 4px;
+  margin-left: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin-left: 2rem;
+  margin-right: 1rem;
+  font-size: 0.6rem;
+}
+
+.card-type {
+  margin-bottom: 0;
+  margin-bottom: 0.3rem;
+  opacity: 0.6;
+}
+
+.card-num {
+  margin-top: 0;
+  margin-bottom: 0;
+}

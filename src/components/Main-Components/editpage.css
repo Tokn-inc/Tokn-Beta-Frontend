@@ -1,0 +1,184 @@
+.outerboxed{
+ justify-content: space-between;
+ align-items: center;
+ color: rgb(230, 63, 85);
+ display: flex;
+ background-color:#272727;
+ border-style: none;
+ padding: 0.5rem;
+ margin: 5.5rem;
+ width:40rem;
+height: 30rem;
+ border-radius: 5px;
+ box-shadow: 0px 3px 6px #00000033;
+ box-shadow: 0px 3px 23px #00000021;
+border: none;
+border-radius: 45px;
+opacity: 1;
+position: relative;
+left:20rem;
+top:3rem;
+}
+
+
+
+
+
+
+  .boxtext{
+    color: white;
+    text-align: center;
+    font: normal normal 000 10px/26px Graphik;
+    letter-spacing: 1px;
+   
+    opacity: 0.6; 
+    font-family: 'Roboto', sans-serif ;
+   text-align: left;
+   position: relative;
+   left: 2rem;
+    }
+    .closeicon{
+    position: relative;
+    left: 2rem;
+    bottom: 15.5rem;
+    opacity: 0.5; 
+    
+      }
+
+  .placeed{
+    display: flexbox;
+    justify-content: center;
+    position: absolute;
+    top: 7em;
+   right: 17.8em; 
+   width:8em;
+    }
+    .bar{
+      position: relative;
+
+     right: 9rem; 
+     
+      }
+  
+.confirmbuttoned {
+  background: #1183D8 0% 0% no-repeat padding-box;
+  border-radius: 31px;
+  opacity: 1;
+color: white;
+font-size: 18px;
+width:8rem;
+height: 2.5rem;
+border: none;
+font-weight: bold;
+border-radius: 50px;
+position: relative;
+bottom: 10rem;
+left:42rem;
+
+}
+
+.confirmbuttoned:hover {
+  opacity: 0.5; 
+}
+
+
+
+.forumed{
+  background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
+background: #333333 0% 0% no-repeat padding-box;
+border:none;
+padding-left: 10px;
+border-radius: 7px;
+opacity: 0.9;
+font-family:'Roboto', sans-serif !important;
+color: rgb(255, 255, 255);
+font-size: 14px ;
+text-emphasis-color: white;
+}
+
+.jek1ed{
+  color: var(--unnamed-color-5f5f5f);
+  text-align: left;
+  font: normal normal medium 12px/15px Graphik;
+  letter-spacing: 0px;
+  color: #5F5F5F;
+  opacity: 1;
+  font-family:'Roboto', sans-serif !important;
+  position: relative;
+  top: 10px;
+  left: 5px;
+  font-size: 12px;
+}
+
+.jek2ed{
+  color: var(--unnamed-color-5f5f5f);
+  text-align: left;
+  letter-spacing: 0px;
+  color: #5F5F5F;
+  opacity: 1;
+  font-family:'Roboto', sans-serif !important;
+  white-space: nowrap;
+  position: relative;
+  left: 5px;
+  top: 10px;
+  font-size: 12px;
+}
+
+.jek11ed{
+  text-align: center;
+  font: normal normal 100 11px/14px Graphik;
+  letter-spacing: 0px;
+  color: #8B8B8B;
+  opacity: 1;
+  position: relative;
+  bottom: 22px;
+ left: 3rem;
+  font-family:'Roboto', sans-serif !important;
+} 
+
+.jek22ed{
+  text-align: left;
+  font: normal normal 100 11px/14px Graphik;
+  letter-spacing: 0px;
+  color: #8B8B8B;
+  opacity: 1;
+  position: relative;
+  bottom: 21px;
+  left: 5.5rem;
+  font-family:'Roboto', sans-serif !important;
+}
+
+.formsed{
+  color: var(--unnamed-color-ffffff);
+text-align: left;
+font: normal normal medium 21px/30px Graphik;
+letter-spacing: 0px;
+color: #FFFFFF;
+opacity: 1;
+font-family: 'Roboto', sans-serif;
+width: 87px;
+height: 21px;
+align-content: center;
+align-items: center;
+}
+
+.draged{
+font-family:  'Roboto', sans-serif;
+width: 158px;
+height: 40px;
+text-align: center;
+font-size: 24px;
+letter-spacing: 0px;
+color: #FFFFFF;
+opacity: 1;
+position: relative;
+bottom:11rem;
+left:-10em;
+font-weight: bold;
+}
+
+
+
+
+
+
